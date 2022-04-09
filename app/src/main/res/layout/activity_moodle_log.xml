@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <!-- Toolbar -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.IESAtaulfoArgenta.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/Theme.IESAtaulfoArgenta.PopupOverlay">
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/userEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/moodleimage"
+        android:layout_marginTop="30dp"
+        android:hint="@string/email"
+        app:boxBackgroundColor="@color/white"
+        app:errorEnabled="true"
+        app:helperTextEnabled="true"
+
+
+        app:hintTextColor="?android:attr/textColorHint">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        app:helperTextEnabled="true"
+        android:id="@+id/userPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundColor="@color/white"
+        app:hintTextColor="?android:attr/textColorHint"
+        app:errorEnabled="true"
+        android:layout_below="@id/userEmail"
+        android:hint="@string/password"
+        app:endIconMode="password_toggle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/remember_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userPassword"
+        android:text="@string/remember_user" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/remember_login"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:clickable="false"
+        android:enabled="false"
+        android:onClick="verifyFields"
+        android:text="@string/login"
+        android:textColor="@color/black"
+        app:cornerRadius="150dp" />
+
+
+    <ImageView
+        android:id="@+id/moodleimage"
+        android:layout_width="165dp"
+        android:layout_height="71dp"
+        android:layout_below="@id/app_bar_main"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        app:srcCompat="@drawable/moodle" />
+
+    "@android:color/holo_red_dark"/>
+
+</RelativeLayout>

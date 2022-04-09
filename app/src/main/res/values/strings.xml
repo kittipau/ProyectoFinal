@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">IESAtaulfoArgenta</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">IES ATAULFO ARGENTA</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_ensenanzas">Oferta Educativa</string>
+    <string name="menu_contacto">Contacto</string>
+    <string name="menu_equipo">Equipo</string>
+    <string name="menu_home">Inicio</string>
+
+    <string name="Ensenanzas">OFERTA EDUCATIVA</string>
+    <string name="Contacto">CONTACTO</string>
+    <string name="Menu_equipo">EQUIPO DIRECTIVO</string>
+
+
+    <!--Actividad de Equipo directivo -->
+    <string name="Equipo_Director">DIRECTOR:</string>
+    <string name="Equipo_jefe_ESO">JEFE DE ESTUDIOS DE SECUNDARIA:</string>
+    <string name="Equipo_jefe_FP">JEFE DE ESTUDIOS DE FORMACIÓN PROFESIONAL:</string>
+    <string name="Equipo_Secretario">SECRETARIO:</string>
+    <string name="Equipo_Jefe_Adjunto">JEFE DE ESTUDIOS ADJUNTO:</string>
+    <string name="title_activity_moodle">Moodle</string>
+
+    <!--Actividad de Moodle Loggino -->
+    <string name="Usuario">Usuario</string>
+    <string name="Pass">Contraseña</string>
+    <string name="Acceder"></string>
+
+    <string name="email">Correo electrónico</string>
+    <string name="password">Contraseña</string>
+    <string name="name">Nombre</string>
+    <string name="last_name">Apellidos</string>
+    <string name="verfication_code">Código de verificación</string>
+
+    <string name="login_title">Moodle</string>
+    <string name="remember_user">Recordar usuario</string>
+    <string name="login">Iniciar sesión</string>
+
+
+    <string name="Redirigiendo">Redirigiendo...</string>
+    <string name="covid">Protocolo COVID19</string>
+
+    <!--INICIO NOTICIAS -->
+    <string name="titulo1">Charlas y talleres online del Programa Cibercooperantes de INCIBE</string>
+    <string name="titulo2">Halloween en la biblioteca del IES Ataúlfo Argenta</string>
+
+    <string name="NoticiaText1"> Desde el Programa Cibercooperantes de INCIBE han lanzado una nueva iniciativa, a través de la cual podréis asistir a charlas </string>
+    <string name="NoticiasText2">Si no ves la información, pulsa en este enlace http://iesataulfoargenta.es/wp/wp-content/uploads/2021/10/HALLOWEEN-1.pdf ¿Te atreves?</string>
+
+    <string name="vermas">Ver más</string>
+
+    <!--COVID  -->
+    <string name="covidtit1">Plan de contingencia antes la situación de alerta sanitaria por la COVID-2019</string>
+    <string name="covidtit2">Iniciativas</string>
+    <string name="covidtex2">El Departamento de Educación Física nos proporciona un blog en el que tenemos algunos consejos para mantenernos en forma durante ésta cuarentena</string>
+    <string name="covidtex1">Puede consultar la actualización del Plan de contingencia ante la situación de alerta sanitaria por la COVID-19 en el siguiente enlace:</string>
+
+    <!-- Enseñanzas -->
+    <string name="ESO">EDUCACIÓN SECUNDARIA OBLIGATORIA</string>
+    <string name="BACHILLER">BACHILLERATO</string>
+    <string name= "FP">FORMACIÓN PROFESIONAL</string>
+    <string name="FPBCocina">FPB Cocina y Restauración</string>
+    <string name="GMSistemas">CFGM Sistemas Microinformáticos y Redes</string>
+    <string name="GSDAM">CFGS Desarrollo de Apliaciones Multiplataforma</string>
+    <string name="GSDAW">CFGS Desarrollo de Apliaciones Web</string>
+
+
+    <string name="concurso">EDUCACIÓN SECUNDARIA OBLIGATORIA</string>
+    <string name="votaciones">EDUCACIÓN SECUNDARIA OBLIGATORIA</string>
+    <string name="nosotros">EDUCACIÓN SECUNDARIA OBLIGATORIA</string>
+
+
+</resources>
