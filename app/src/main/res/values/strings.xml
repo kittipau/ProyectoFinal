@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">IESAtaulfoArgenta</string>
+    <string name="app_name">BIAF</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">IES ATAULFO ARGENTA</string>
@@ -7,9 +7,10 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_ensenanzas">Oferta Educativa</string>
-    <string name="menu_contacto">Contacto</string>
-    <string name="menu_equipo">Equipo</string>
+    <string name="menu_disenadores">Diseñadores</string>
+    <string name="menu_diseno">Diseños</string>
+    <string name="menu_votaciones">Votación</string>
+    <string name="menu_sobrenosotros">Sobre Nosotros</string>
     <string name="menu_home">Inicio</string>
 
     <string name="Ensenanzas">OFERTA EDUCATIVA</string>

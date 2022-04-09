@@ -9,16 +9,21 @@
             android:icon="@drawable/ic_baseline_home_24"
             android:title="@string/menu_home" />
         <item
-            android:id="@+id/nav_ensenanzas"
-            android:icon="@drawable/ic_baseline_menu_book_24"
-            android:title="@string/menu_ensenanzas" />
+            android:id="@+id/nav_Diseñadores"
+            android:icon="@drawable/disenador_1"
+            android:title="@string/menu_disenadores" />
         <item
-            android:id="@+id/nav_contacto"
-            android:icon="@drawable/ic_baseline_contact_phone_24"
-            android:title="@string/menu_contacto" />
+            android:id="@+id/nav_Diseños"
+            android:icon="@drawable/vestido"
+            android:title="@string/menu_diseno" />
         <item
-            android:id="@+id/nav_equipo"
+            android:id="@+id/nav_Votación"
+            android:icon="@drawable/votar"
+            android:title="@string/menu_votaciones" />
+
+        <item
+            android:id="@+id/nav_SobreNosotros"
             android:icon="@drawable/ic_baseline_people_24"
-            android:title="@string/menu_equipo" />
+            android:title="@string/menu_sobrenosotros" />
     </group>
 </menu>

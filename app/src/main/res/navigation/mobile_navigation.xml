@@ -14,18 +14,18 @@
     <fragment
         android:id="@+id/nav_ensenanzas"
         android:name="com.example.iesataulfoargenta.EnsenanzasFragment"
-        android:label="@string/menu_ensenanzas"
+        android:label="@string/menu_disenadores"
         tools:layout="@layout/fragment_ensenanzas" />
 
     <fragment
         android:id="@+id/nav_contacto"
         android:name="com.example.iesataulfoargenta.ContactoFragment"
-        android:label="@string/menu_contacto"
+        android:label="@string/menu_diseno"
         tools:layout="@layout/fragment_contacto" />
 
     <fragment
         android:id="@+id/nav_equipo"
         android:name="com.example.iesataulfoargenta.EquipoFragment"
-        android:label="@string/menu_equipo"
+        android:label="@string/menu_votaciones"
         tools:layout="@layout/fragment_equipo" />
 </navigation>

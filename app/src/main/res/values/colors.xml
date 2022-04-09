@@ -8,8 +8,23 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    <!--ESCALA DE GRISES -->
+
+
     <color name="azul">#536895</color>
     <color name="gris_Fondo">#e2e2e2</color>
 
-    e2e2e2
+    <!--ESCALA DE GRISES -->
+    <color name="gris_oscuro">#aca3a3</color>
+    <color name="gris_medio">#b5b4b4</color>
+    <color name="gris_claro">#d4d4d4</color>
+    <color name="gris_superclaro">#dcdcdc</color>
+    <color name="casi_blanco">#ececec</color>
+
+    <!--ESCALA DE AZULES -->
+    <color name="turquesa_muyoscuro">#0e292c</color>
+    <color name="turquesa_oscuro">#1c5a64</color>
+    <color name="turquesa_medio">#2d7176</color>
+    <color name="azul_claro">#78aab1</color>
+    <color name="azul_muyclaro">#b1dce2</color>
 </resources>
