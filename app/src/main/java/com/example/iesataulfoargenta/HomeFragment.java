@@ -32,49 +32,6 @@ public class HomeFragment extends Fragment {
         View root = binding.getRoot();
 
 
-        //Añadir root por ser fragment
-        // Creación de un objeto Button, con un listener para detectar cuando lo pulsas y llevarte a la activity covid
-        // Toast de aviso
-
-        Button covid = root.findViewById(R.id.ButtonCovid);
-        covid.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), Covid.class);
-                startActivity(intent);
-            }
-        });
-
-        // Creación de un objeto TextView, con un listener para detectar cuando lo pulsas y redirigirte a la URL indicada
-        // Toast de aviso
-
-        Button vermas = root.findViewById(R.id.button2);
-        vermas.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getActivity(), getResources().getString(R.string.Redirigiendo), Toast.LENGTH_SHORT).show();
-                String url = "http://iesataulfoargenta.es/wp/2021/11/08/charlas-y-talleres-online-del-programa-cibercooperantes-de-incibe/";
-                Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse(url));
-                getActivity().startActivity(intent);
-            }
-        });
-
-        // Creación de un objeto TextView, con un listener para detectar cuando lo pulsas y redirigirte a la URL indicada
-        // Toast de aviso
-        Button vermas1 = root.findViewById(R.id.button3);
-        vermas1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getActivity(), getResources().getString(R.string.Redirigiendo), Toast.LENGTH_SHORT).show();
-                String url = "http://iesataulfoargenta.es/wp/2021/10/28/halloween-en-la-biblioteca-del-ies-ataulfo-argenta/";
-                Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse(url));
-                getActivity().startActivity(intent);
-            }
-        });
-
-
         return root;
 
     }

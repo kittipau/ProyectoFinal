@@ -15,11 +15,12 @@
     <color name="gris_Fondo">#e2e2e2</color>
 
     <!--ESCALA DE GRISES -->
-    <color name="gris_oscuro">#aca3a3</color>
+    <color name="gris_oscuro">#515151</color>
     <color name="gris_medio">#b5b4b4</color>
     <color name="gris_claro">#d4d4d4</color>
     <color name="gris_superclaro">#dcdcdc</color>
     <color name="casi_blanco">#ececec</color>
+    <color name="gris_muyoscuro">#292929</color>
 
     <!--ESCALA DE AZULES -->
     <color name="turquesa_muyoscuro">#0e292c</color>

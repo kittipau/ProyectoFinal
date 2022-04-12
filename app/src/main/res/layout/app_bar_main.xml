@@ -15,7 +15,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
+            android:background="@color/gris_oscuro"
             app:popupTheme="@style/Theme.IESAtaulfoArgenta.PopupOverlay">
         <ImageButton
             android:id="@+id/botonMoodle"
@@ -25,6 +25,7 @@
             android:layout_gravity="right"
             android:background="@color/white"
             app:srcCompat="@drawable/m"
+            android:visibility="invisible"
             ></ImageButton>
 
     </androidx.appcompat.widget.Toolbar>

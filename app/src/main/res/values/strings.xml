@@ -2,7 +2,7 @@
     <string name="app_name">BIAF</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">IES ATAULFO ARGENTA</string>
+    <string name="nav_header_title">BIAF</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
@@ -12,6 +12,8 @@
     <string name="menu_votaciones">Votación</string>
     <string name="menu_sobrenosotros">Sobre Nosotros</string>
     <string name="menu_home">Inicio</string>
+
+    <string name="texto_inicio">PASIÓN, ARTESANÍA Y LEGADO</string>
 
     <string name="Ensenanzas">OFERTA EDUCATIVA</string>
     <string name="Contacto">CONTACTO</string>
