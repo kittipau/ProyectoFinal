@@ -42,11 +42,11 @@ public class MainActivity extends AppCompatActivity {
         //crear los objetos del menu lateral
         DrawerLayout drawer = binding.drawerLayout;
         NavigationView navigationView = binding.navView;
-        navigationView.setBackgroundColor(getResources().getColor(R.color.gris_oscuro));
-        navigationView.getBackground().setAlpha(200);
+        navigationView.setBackgroundColor(getResources().getColor(R.color.white));
+        navigationView.getBackground().setAlpha(250);
 
         Resources resource=(Resources)getBaseContext().getResources();
-        ColorStateList csl=(ColorStateList)resource.getColorStateList(R.color.white);
+        ColorStateList csl=(ColorStateList)resource.getColorStateList(R.color.black);
         navigationView.setItemTextColor(csl);
 
         // Passing each menu ID as a set of Ids because each

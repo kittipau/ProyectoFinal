@@ -28,5 +28,9 @@
             android:id="@+id/nav_SobreNosotros"
             android:icon="@drawable/ic_baseline_people_24"
             android:title="@string/menu_sobrenosotros" />
+        <item
+            android:id="@+id/nav_Contacto"
+            android:icon="@drawable/contacto"
+            android:title="@string/menu_sobrenosotros" />
     </group>
 </menu>
