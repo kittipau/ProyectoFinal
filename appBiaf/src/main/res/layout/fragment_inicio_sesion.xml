@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InicioSesion"
+    android:background="@drawable/fondo1">
+
+    <ImageView
+        android:id="@+id/logoimage"
+        android:layout_width="219dp"
+        android:layout_height="152dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+
+        app:srcCompat="@drawable/logo"
+        />
+
+    <RelativeLayout
+        android:layout_marginTop="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="426dp"
+        android:background="#80000000">
+
+        <!-- Contenedor  para insertar el usuario-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/userEmail"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="50dp"
+            android:hint="@string/loginusuario"
+            app:errorEnabled="true"
+            app:helperTextEnabled="true"
+            app:hintTextColor="@color/white">
+
+            <!-- Textfield usuario con fondo semintransparente-->
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/userEmail2"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="#80000000" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Contenedor  para insertar la contraseña. (-->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/userPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userEmail"
+            android:hint="@string/logincontra"
+            app:endIconMode="password_toggle"
+            app:errorEnabled="true"
+            app:helperTextEnabled="true"
+            android:textColor="@color/white"
+            android:layout_marginTop="15dp">
+
+            <!-- Textfield contraseña con fondo semintransparente-->
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/userPassword2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#80000000"
+                android:inputType="textPassword"
+                android:textColor="@color/white"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Botón para Iniciar sesión y comenzar el juego-->
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/userPassword"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="50dp"
+            android:text="@string/loginiciar"
+            android:textColor="@color/black"
+            app:cornerRadius="150dp" />
+
+        <!-- Imagen de usuario-->
+
+
+        <!-- Textview Registrar para iniciar el registro de un nuevo usuario-->
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonLogin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/loginregistrar"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>

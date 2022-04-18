@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.appBiaf.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_disenadores"
+        android:name="com.example.appBiaf.EnsenanzasFragment"
+        android:label="@string/menu_disenadores"
+        tools:layout="@layout/fragment_ensenanzas" />
+
+    <fragment
+        android:id="@+id/nav_disenos"
+        android:name="com.example.appBiaf.ContactoFragment"
+        android:label="@string/menu_diseno"
+        tools:layout="@layout/fragment_contacto" />
+
+    <!--
+    <fragment
+        android:id="@+id/nav_votacion"
+        android:name="com.example.appBiaf.ConcursoFragment"
+        android:label="@string/menu_votaciones"
+        tools:layout="@layout/fragment_concurso" />
+        -->
+
+    <fragment
+        android:id="@+id/nav_concurso"
+        android:name="com.example.appBiaf.ConcursoFragment"
+        android:label="@string/menu_concurso_nav"
+        tools:layout="@layout/fragment_concurso" />
+</navigation>
