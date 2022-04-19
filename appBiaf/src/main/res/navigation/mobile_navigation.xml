@@ -13,27 +13,31 @@
 
     <fragment
         android:id="@+id/nav_disenadores"
-        android:name="com.example.appBiaf.EnsenanzasFragment"
+        android:name="com.example.appBiaf.DisenadoresFragment"
         android:label="@string/menu_disenadores"
-        tools:layout="@layout/fragment_ensenanzas" />
+        tools:layout="@layout/fragment_disenadores" />
 
     <fragment
         android:id="@+id/nav_disenos"
-        android:name="com.example.appBiaf.ContactoFragment"
+        android:name="com.example.appBiaf.SobreNosotrosFragment"
         android:label="@string/menu_diseno"
-        tools:layout="@layout/fragment_contacto" />
+        tools:layout="@layout/fragment_sobre_nosotros" />
 
-    <!--
-    <fragment
-        android:id="@+id/nav_votacion"
-        android:name="com.example.appBiaf.ConcursoFragment"
-        android:label="@string/menu_votaciones"
-        tools:layout="@layout/fragment_concurso" />
-        -->
 
     <fragment
         android:id="@+id/nav_concurso"
         android:name="com.example.appBiaf.ConcursoFragment"
         android:label="@string/menu_concurso_nav"
         tools:layout="@layout/fragment_concurso" />
+
+    <fragment
+        android:id="@+id/nav_iniciosesion"
+        android:name="com.example.appBiaf.InicioSesionFragment"
+        android:label="@string/menu_iniciosesion_nav"
+        tools:layout="@layout/fragment_inicio_sesion" />
+
+    <fragment
+        android:id="@+id/nav_SobreNosotros"
+        android:name="com.example.appBiaf.SobreNosotrosFragment"
+        tools:layout="@layout/fragment_sobre_nosotros" />
 </navigation>

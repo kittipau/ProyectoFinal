@@ -11,6 +11,9 @@
             android:title="@string/menu_home"
             />
         <item
+            android:id="@+id/nav_concurso"
+            android:title="@string/menu_concurso_nav" />
+        <item
             android:id="@+id/nav_disenadores"
             android:title="@string/menu_disenadores" />
         <item
@@ -23,8 +26,15 @@
         <item
             android:id="@+id/nav_SobreNosotros"
             android:title="@string/menu_sobrenosotros" />
+
+
+    </group>
+
+    <group android:id="@+id/group_menu"
+        >
         <item
-            android:id="@+id/nav_concurso"
-            android:title="@string/menu_concurso_nav" />
+            android:id="@+id/nav_iniciosesion"
+            android:icon="@drawable/usuario"
+            android:title="" />
     </group>
 </menu>

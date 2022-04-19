@@ -10,9 +10,11 @@
     <string name="menu_disenadores">Diseñadores</string>
     <string name="menu_diseno">Diseños</string>
     <string name="menu_votaciones">Votación</string>
-    <string name="menu_sobrenosotros">Sobre Nosotros</string>
+    <string name="menu_sobrenosotros">SOBRE NOSOTROS</string>
     <string name="menu_home">Inicio</string>
     <string name="menu_concurso_nav">Concurso</string>
+    <string name="menu_iniciosesion_nav">INICIO SESIÓN</string>
+
 
     <string name="texto_inicio">PASIÓN, ARTESANÍA Y LEGADO</string>
 
@@ -40,14 +42,22 @@
     <string name="sobreconcurso20">CALENDARIO PREVISTO</string>
     <string name="sobreconcurso21">CALENDARIO PREVISTO</string>
 
+    <!-- Strings de sobre nosotros -->
+    <string name="sobrenosotros">Bilbao International Art and Fashion – BIAAF es una plataforma dedicada a descubrir, apoyar y lanzar diseñadores emergentes de moda de todo el mundo que demuestren en sus creaciones altas dosis de talento, innovación y creatividad.</string>
+    <string name="sobrenosotros0">Nuestro objetivo principal es dar a los diseñadores emergentes visibilidad internacional tanto dentro de la industria de la moda, como al público general y a los medios de comunicación.</string>
+
+    <string name="sobrenosotros1">Nos mantenemos en contacto permanente con jóvenes diseñadores, escuelas de diseño y profesionales de la industria de la moda de reconocido prestigio y ámbito internacional, desarrollando actividades como el concurso de diseño de moda Bilbao International Art and Fashion, foros, conferencias, cursos en escuelas de reconocido prestigio internacional, etc.</string>
+
+
+
     <!-- Strings del loggin -->
     <string name="loginusuario">Usuario </string>
     <string name="logincontra">Contraseña</string>
     <string name="loginiciar">Iniciar sesión</string>
     <string name="loginregistrar">Registrar</string>
 
-
-    <string name="Ensenanzas">OFERTA EDUCATIVA</string>
+    <!--Navegacion -->
+    <string name="menu_diseñadores">DISEÑADORES</string>
     <string name="Contacto">CONTACTO</string>
     <string name="menu_concurso">CONCURSO</string>
 
@@ -70,45 +80,6 @@
     <string name="name">Nombre</string>
     <string name="last_name">Apellidos</string>
     <string name="verfication_code">Código de verificación</string>
-
-    <string name="login_title">Moodle</string>
-    <string name="remember_user">Recordar usuario</string>
-    <string name="login">Iniciar sesión</string>
-
-
-    <string name="Redirigiendo">Redirigiendo...</string>
-    <string name="covid">Protocolo COVID19</string>
-
-    <!--INICIO NOTICIAS -->
-    <string name="titulo1">Charlas y talleres online del Programa Cibercooperantes de INCIBE</string>
-    <string name="titulo2">Halloween en la biblioteca del IES Ataúlfo Argenta</string>
-
-    <string name="NoticiaText1"> Desde el Programa Cibercooperantes de INCIBE han lanzado una nueva iniciativa, a través de la cual podréis asistir a charlas </string>
-    <string name="NoticiasText2">Si no ves la información, pulsa en este enlace http://iesataulfoargenta.es/wp/wp-content/uploads/2021/10/HALLOWEEN-1.pdf ¿Te atreves?</string>
-
-    <string name="vermas">Ver más</string>
-
-    <!--COVID  -->
-    <string name="covidtit1">Plan de contingencia antes la situación de alerta sanitaria por la COVID-2019</string>
-    <string name="covidtit2">Iniciativas</string>
-    <string name="covidtex2">El Departamento de Educación Física nos proporciona un blog en el que tenemos algunos consejos para mantenernos en forma durante ésta cuarentena</string>
-    <string name="covidtex1">Puede consultar la actualización del Plan de contingencia ante la situación de alerta sanitaria por la COVID-19 en el siguiente enlace:</string>
-
-    <!-- Enseñanzas -->
-    <string name="ESO">EDUCACIÓN SECUNDARIA OBLIGATORIA</string>
-    <string name="BACHILLER">BACHILLERATO</string>
-    <string name="FP">FORMACIÓN PROFESIONAL</string>
-    <string name="FPBCocina">FPB Cocina y Restauración</string>
-    <string name="GMSistemas">CFGM Sistemas Microinformáticos y Redes</string>
-    <string name="GSDAM">CFGS Desarrollo de Apliaciones Multiplataforma</string>
-    <string name="GSDAW">CFGS Desarrollo de Apliaciones Web</string>
-
-
-    <string name="concurso">EDUCACIÓN SECUNDARIA OBLIGATORIA</string>
-    <string name="votaciones">EDUCACIÓN SECUNDARIA OBLIGATORIA</string>
-    <string name="nosotros">EDUCACIÓN SECUNDARIA OBLIGATORIA</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>
