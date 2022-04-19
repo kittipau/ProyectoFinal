@@ -3,6 +3,26 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Paula/AndroidStudioProjects/ProyectoFinal/appBiaf/src/main/res/layout/app_bar_main.xml" value="0.14722222222222223" />
+        <entry key="..\:/Users/Paula/AndroidStudioProjects/ProyectoFinal/appBiaf/src/main/res/layout/fragment_concurso.xml" value="0.371875" />
+        <entry key="..\:/Users/Paula/AndroidStudioProjects/ProyectoFinal/appBiaf/src/main/res/layout/fragment_contacto.xml" value="0.371875" />
+        <entry key="..\:/Users/Paula/AndroidStudioProjects/ProyectoFinal/appBiaf/src/main/res/layout/fragment_ensenanzas.xml" value="0.25" />
+        <entry key="..\:/Users/Paula/AndroidStudioProjects/ProyectoFinal/appBiaf/src/main/res/layout/fragment_home.xml" value="0.371875" />
+        <entry key="..\:/Users/Paula/AndroidStudioProjects/ProyectoFinal/appBiaf/src/main/res/layout/fragment_inicio_sesion.xml" value="0.371875" />
+        <entry key="..\:/Users/Paula/AndroidStudioProjects/ProyectoFinal/appBiaf/src/main/res/layout/nav_header_main.xml" value="0.14722222222222223" />
+        <entry key="..\:/Users/Paula/AndroidStudioProjects/ProyectoFinal/appBiaf/src/main/res/menu/activity_main_drawer.xml" value="0.5" />
+        <entry key="..\:/Users/pulpracticas.vsti/Desktop/ProyectoFinal/appBiaf/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/pulpracticas.vsti/Desktop/ProyectoFinal/appBiaf/src/main/res/layout/app_bar_main.xml" value="0.1" />
+        <entry key="..\:/Users/pulpracticas.vsti/Desktop/ProyectoFinal/appBiaf/src/main/res/layout/content_main.xml" value="0.25" />
+        <entry key="..\:/Users/pulpracticas.vsti/Desktop/ProyectoFinal/appBiaf/src/main/res/layout/fragment_concurso.xml" value="0.25" />
+        <entry key="..\:/Users/pulpracticas.vsti/Desktop/ProyectoFinal/appBiaf/src/main/res/layout/fragment_contacto.xml" value="0.29518072289156627" />
+        <entry key="..\:/Users/pulpracticas.vsti/Desktop/ProyectoFinal/appBiaf/src/main/res/layout/fragment_diseñadores.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/pulpracticas.vsti/Desktop/ProyectoFinal/appBiaf/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Users/pulpracticas.vsti/Desktop/ProyectoFinal/appBiaf/src/main/res/layout/fragment_inicio_sesion.xml" value="0.22" />
+        <entry key="..\:/Users/pulpracticas.vsti/Desktop/ProyectoFinal/appBiaf/src/main/res/layout/fragment_inicio_sesion_fragmentt.xml" value="0.12685185185185185" />
+        <entry key="..\:/Users/pulpracticas.vsti/Desktop/ProyectoFinal/appBiaf/src/main/res/layout/nav_header_main.xml" value="0.33" />
+        <entry key="..\:/Users/pulpracticas.vsti/Desktop/ProyectoFinal/appBiaf/src/main/res/menu/activity_main_drawer.xml" value="0.33" />
+        <entry key="..\:/Users/pulpracticas.vsti/Desktop/ProyectoFinal/appBiaf/src/main/res/menu/main.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/pulpracticas.vsti/StudioProjects/ProyectoFinal/app/src/main/res/drawable/bordegris_cuadrado.xml" value="0.1555" />
         <entry key="..\:/Users/pulpracticas.vsti/StudioProjects/ProyectoFinal/app/src/main/res/drawable/bordergris.xml" value="0.197" />
         <entry key="..\:/Users/pulpracticas.vsti/StudioProjects/ProyectoFinal/app/src/main/res/drawable/separador.xml" value="0.11" />
