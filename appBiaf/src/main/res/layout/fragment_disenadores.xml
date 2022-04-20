@@ -45,7 +45,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_ensenanzas"
         app:layout_constraintVertical_bias="0.039"
-        tools:layout_editor_absoluteX="16dp" />
+        tools:layout_editor_absoluteX="16dp"
+        android:background="@drawable/marmol"
+        android:alpha="1"
+        android:backgroundTint="#80FFFFFF"
+        android:backgroundTintMode="src_over"
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

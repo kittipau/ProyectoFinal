@@ -6,7 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".HomeFragment"
     android:background="@drawable/fondo1"
-    android:alpha="0.8">
+    android:alpha="0.9"
+    >
+
 
     <TextView
         android:id="@+id/text_home"
