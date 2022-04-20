@@ -18,6 +18,7 @@
 
     <string name="texto_inicio">PASIÓN, ARTESANÍA Y LEGADO</string>
 
+    <!-- texto del concurso -->
     <string name="sobreconcurso0">CONCURSO</string>
     <string name="sobreconcurso1">El concurso internacional de diseño de moda de BIAAF está dirigido a diseñadores emergentes de todo el mundo de entre 18 y 35 años, tiene una periodicidad bienal y cuenta con la colaboración y especial asesoramiento de profesionales de prestigio en los ámbitos de la moda y la cultura.</string>
     <string name="sobreconcurso2">El carácter internacional de BIAAF pretende favorecer el enriquecimiento intercultural y la promoción de la moda como auténtico bien cultural, en estrecha relación con los valores artísticos. Por ello, todos los trabajos presentados a concurso deben aportar como valor añadido el estar inspirados o relacionados directamente con el mundo del arte.</string>
@@ -42,12 +43,12 @@
     <string name="sobreconcurso20">CALENDARIO PREVISTO</string>
     <string name="sobreconcurso21">CALENDARIO PREVISTO</string>
 
+
     <!-- Strings de sobre nosotros -->
     <string name="sobrenosotros">Bilbao International Art and Fashion – BIAAF es una plataforma dedicada a descubrir, apoyar y lanzar diseñadores emergentes de moda de todo el mundo que demuestren en sus creaciones altas dosis de talento, innovación y creatividad.</string>
     <string name="sobrenosotros0">Nuestro objetivo principal es dar a los diseñadores emergentes visibilidad internacional tanto dentro de la industria de la moda, como al público general y a los medios de comunicación.</string>
 
     <string name="sobrenosotros1">Nos mantenemos en contacto permanente con jóvenes diseñadores, escuelas de diseño y profesionales de la industria de la moda de reconocido prestigio y ámbito internacional, desarrollando actividades como el concurso de diseño de moda Bilbao International Art and Fashion, foros, conferencias, cursos en escuelas de reconocido prestigio internacional, etc.</string>
-
 
 
     <!-- Strings del loggin -->
@@ -56,19 +57,22 @@
     <string name="loginiciar">Iniciar sesión</string>
     <string name="loginregistrar">Registrar</string>
 
-    <!--Navegacion -->
+    <!--Títulos -->
     <string name="menu_diseñadores">DISEÑADORES</string>
-    <string name="Contacto">CONTACTO</string>
+    <string name="menu_contacto">CONTACTO</string>
     <string name="menu_concurso">CONCURSO</string>
+    <string name="menu_registro">REGISTRO</string>
+    <string name="menu_iniciosesion">INICIA SESIÓN</string>
 
 
-    <!--Actividad de Equipo directivo -->
-    <string name="Equipo_Director">DIRECTOR:</string>
-    <string name="Equipo_jefe_ESO">JEFE DE ESTUDIOS DE SECUNDARIA:</string>
-    <string name="Equipo_jefe_FP">JEFE DE ESTUDIOS DE FORMACIÓN PROFESIONAL:</string>
-    <string name="Equipo_Secretario">SECRETARIO:</string>
-    <string name="Equipo_Jefe_Adjunto">JEFE DE ESTUDIOS ADJUNTO:</string>
-    <string name="title_activity_moodle">Moodle</string>
+    <!-- Strings del Registro -->
+    <string name="registrouser">UserName *</string>
+    <string name="registroemail">Email *</string>
+    <string name="registrocontraseña">Contraseña *</string>
+    <string name="registrocontraseña2">Repita contraseña *</string>
+    <string name="registroRegistrar">Registrar</string>
+    <string name="registroRestablecer">Restablecer</string>
+
 
     <!--Actividad de Moodle Loggino -->
     <string name="Usuario">Usuario</string>
@@ -80,6 +84,8 @@
     <string name="name">Nombre</string>
     <string name="last_name">Apellidos</string>
     <string name="verfication_code">Código de verificación</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

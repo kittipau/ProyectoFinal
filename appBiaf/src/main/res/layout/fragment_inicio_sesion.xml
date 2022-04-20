@@ -92,7 +92,7 @@
                     android:id="@+id/userEmail2"
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
-                    android:background="#30000000"
+                    android:background="#90FFFFFF"
                     android:fontFamily="@font/gothiccb" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -106,7 +106,6 @@
                 android:layout_below="@id/userEmail"
                 android:layout_marginTop="15dp"
                 android:hint="@string/logincontra"
-                android:textColor="@color/white"
                 app:endIconMode="password_toggle"
                 app:errorEnabled="true"
                 app:helperTextEnabled="true">
@@ -116,7 +115,7 @@
                     android:id="@+id/userPassword2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#30000000"
+                    android:background="#90FFFFFF"
                     android:fontFamily="@font/gothiccb"
                     android:inputType="textPassword" />
 
@@ -132,8 +131,7 @@
                 android:layout_marginEnd="72dp"
                 android:backgroundTint="@color/white"
                 android:text="@string/loginiciar"
-                android:textColor="@color/black"
-                 />
+                android:textColor="@color/black" />
 
             <TextView
                 android:id="@+id/textView2"
