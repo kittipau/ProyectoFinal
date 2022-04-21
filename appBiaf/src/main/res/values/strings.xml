@@ -13,7 +13,6 @@
     <string name="menu_sobrenosotros">SOBRE NOSOTROS</string>
     <string name="menu_home">Inicio</string>
     <string name="menu_concurso_nav">Concurso</string>
-    <string name="menu_iniciosesion_nav">INICIO SESIÓN</string>
 
 
     <string name="texto_inicio">PASIÓN, ARTESANÍA Y LEGADO</string>
@@ -63,6 +62,14 @@
     <string name="menu_concurso">CONCURSO</string>
     <string name="menu_registro">REGISTRO</string>
     <string name="menu_iniciosesion">INICIA SESIÓN</string>
+    <string name="menu_admin">GESTION ADMINISTRADOR</string>
+    <string name="menu_algo">sd dfs</string>
+
+    <!--Botones de la gestión admins-->
+    <string name="gesDiseñadores">GESTIONAR DISEÑADORES</string>
+    <string name="gesDiseños">GESTIONAR DISEÑos</string>
+    <string name="gesConfig">GESTIONAR CONFIGURACION</string>
+    <string name="gesUsuarios">Gestionar Usuarios</string>
 
 
     <!-- Strings del Registro -->
@@ -84,8 +91,6 @@
     <string name="name">Nombre</string>
     <string name="last_name">Apellidos</string>
     <string name="verfication_code">Código de verificación</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

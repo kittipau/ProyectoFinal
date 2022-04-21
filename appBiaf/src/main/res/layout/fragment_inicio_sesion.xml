@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:fontFamily="@font/gothic"
-        android:text="@string/menu_iniciosesion_nav"
+        android:text="@string/menu_iniciosesion"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="20sp"
@@ -48,6 +48,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view"
         app:layout_constraintVertical_bias="0.0"
+        android:backgroundTint="#50FFFFFF"
+        android:backgroundTintMode="src_over"
         >
 
 
