@@ -65,11 +65,6 @@
     <string name="menu_admin">GESTION ADMINISTRADOR</string>
     <string name="menu_algo">sd dfs</string>
 
-    <!--Botones de la gestión admins-->
-    <string name="gesDiseñadores">GESTIONAR DISEÑADORES</string>
-    <string name="gesDiseños">GESTIONAR DISEÑos</string>
-    <string name="gesConfig">GESTIONAR CONFIGURACION</string>
-    <string name="gesUsuarios">Gestionar Usuarios</string>
 
 
     <!-- Strings del Registro -->
@@ -81,10 +76,35 @@
     <string name="registroRestablecer">Restablecer</string>
 
 
+    <!--Botones de la gestión admins-->
+    <string name="gesDiseñadores">GESTIONAR DISEÑADORES</string>
+    <string name="gesDiseños">GESTIONAR DISEÑos</string>
+    <string name="gesConfig">GESTIONAR CONFIGURACION</string>
+    <string name="gesUsuarios">Gestionar Usuarios</string>
+    <string name="gesiD">ID</string>
+    <string name="descripcion">Descripción </string>
+
+    <!--GestionDiseñadores -->
+    <string name="alias">Alias</string>
+
+    <!--Gestión Diseños -->
+    <string name="nombre">Nombre </string>
+    <string name="imagen">imagen </string>
+
+    <!--Gestion usuarios -->
+    <string name="userName">Username </string>
+    <string name="contraseña">Contraseña </string>
+    <string name="mail">Email </string>
+
+    <!--Gestion Configuración -->
+    <string name="fechalimite">Fecha Límite </string>
+    <string name="adminPass">Contraseña Administrador</string>
+    <string name="adminUser">Username Administrador</string>
+
     <!--Actividad de Moodle Loggino -->
-    <string name="Usuario">Usuario</string>
-    <string name="Pass">Contraseña</string>
-    <string name="Acceder"></string>
+    <string name="usuario">Usuario</string>
+    <string name="pass">Contraseña</string>
+    <string name="acceder"></string>
 
     <string name="email">Correo electrónico</string>
     <string name="password">Contraseña</string>

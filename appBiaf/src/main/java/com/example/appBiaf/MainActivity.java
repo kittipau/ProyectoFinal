@@ -31,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
 
         // pone el logo en el icono del toolbar
         getSupportActionBar().setIcon(R.drawable.logo);
+
+
         getSupportActionBar().setDisplayShowTitleEnabled(false);
 
         //crear los objetos del menu lateral
@@ -41,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_disenadores, R.id.nav_disenos, R.id.nav_votacion)
+                R.id.nav_home, R.id.nav_disenadores, R.id.nav_disenos, R.id.nav_votacion, R.id.nav_iniciosesion, R.id.nav_concurso)
                 .setOpenableLayout(drawer)
                 .build();
 
