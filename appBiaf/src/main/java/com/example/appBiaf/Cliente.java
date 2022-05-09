@@ -22,7 +22,7 @@ public class Cliente extends Thread {
             /** Se abre un socket en el cliente, y dicho socket establece
              "una conexión con el socket del servidor situado en el puerto 30500 de la 127.0.0.1" */
             Socket socketCliente = new Socket(equipoServidor, puertoServidor);
-
+            gestionarComunicacion(socketCliente,equipoServidor);
 
             //Se cierra el cliente
             socketCliente.close();
