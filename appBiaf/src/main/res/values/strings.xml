@@ -66,7 +66,6 @@
     <string name="menu_algo">sd dfs</string>
 
 
-
     <!-- Strings del Registro -->
     <string name="registrouser">UserName *</string>
     <string name="registroemail">Email *</string>
@@ -88,20 +87,26 @@
     <string name="alias">Alias</string>
 
     <!--Gestión Diseños -->
-    <string name="nombre">Nombre </string>
-    <string name="imagen">imagen </string>
+    <string name="nombre">Nombre</string>
+    <string name="imagen">imagen</string>
 
     <!--Gestion usuarios -->
-    <string name="userName">Username </string>
-    <string name="contraseña">Contraseña </string>
-    <string name="mail">Email </string>
+    <string name="userName">Username</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="mail">Email</string>
+    <string name="modificar">Modificar</string>
+    <string name="cerrarsesion">Cerrar sesión</string>
+    <string name="guardar">Guardar cambios</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="perfil">PERFIL</string>
+
 
     <!--Gestion Configuración -->
     <string name="fechalimite">Fecha Límite </string>
     <string name="adminPass">Contraseña Administrador</string>
     <string name="adminUser">Username Administrador</string>
 
-    <!--Actividad de Moodle Loggino -->
+    <!--Actividad de Loggin -->
     <string name="usuario">Usuario</string>
     <string name="pass">Contraseña</string>
     <string name="acceder"></string>
@@ -111,6 +116,11 @@
     <string name="name">Nombre</string>
     <string name="last_name">Apellidos</string>
     <string name="verfication_code">Código de verificación</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+
 
 
 </resources>
