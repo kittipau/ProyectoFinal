@@ -7,6 +7,8 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -37,17 +39,8 @@ public class InicioSesionFragment extends Fragment {
             @Override
             public void onClick(View view) {
 
-                // Crear fragmento de tu clase
-                Fragment fragment = (InicioSesionFragment) getParentFragmentManager().findFragmentById(R.id.fragment_container_view_tag);
-                // Obtener el administrador de fragmentos a través de la actividad
-                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-                // Definir una transacción
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                // Remplazar el contenido principal por el fragmento
-                fragmentTransaction.replace(R.id.fragment_container_view_tag, fragment);
-                fragmentTransaction.addToBackStack(null);
-                // Cambiar
-                fragmentTransaction.commit();
+                NavController navController = Navigation.findNavController(view);
+                navController.navigate(R.id.action_nav_iniciosesion_to_nav_registro);
             }
         });
 

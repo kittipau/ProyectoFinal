@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -34,10 +35,20 @@
         android:id="@+id/nav_iniciosesion"
         android:name="com.example.appBiaf.InicioSesionFragment"
         android:label="@string/menu_iniciosesion"
-        tools:layout="@layout/fragment_inicio_sesion" />
+        tools:layout="@layout/fragment_inicio_sesion" >
+        <action
+            android:id="@+id/action_nav_iniciosesion_to_nav_registro"
+            app:destination="@id/nav_registro" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_SobreNosotros"
         android:name="com.example.appBiaf.SobreNosotrosFragment"
         tools:layout="@layout/fragment_sobre_nosotros" />
+
+    <fragment
+        android:id="@+id/nav_registro"
+        android:name="com.example.appBiaf.RegistroFragment"
+        tools:layout="@layout/fragment_registro" />
+
 </navigation>
