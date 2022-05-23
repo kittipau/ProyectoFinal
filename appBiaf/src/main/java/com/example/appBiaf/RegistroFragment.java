@@ -36,17 +36,18 @@ public class RegistroFragment extends Fragment {
         user = root.findViewById(R.id.Regusuario2);
         contra = root.findViewById(R.id.Regcontraseña2);
         contra2 = root.findViewById(R.id.RegRepcontraseña2);
-        email = root.findViewById(R.id.userEmail2);
+        email = root.findViewById(R.id.Regemail2);
 
 
         registrar = root.findViewById(R.id.buttonRegistrar);
         registrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//guardo el valor de los campos en variables auxiliares para hacer las validaciones
+                //guardo el valor de los campos en variables auxiliares para hacer las validaciones
                 String nombre_aux = user.getText().toString();
                 String mail_aux = email.getText().toString();
                 String contra_aux = contra.getText().toString();
+                u = new Usuario();
 
                 //se valida el nombre y si es valido se guarda en el usuario
                 switch (Validaciones.validarnombre(nombre_aux)) {
@@ -67,7 +68,7 @@ public class RegistroFragment extends Fragment {
                         break;
                     case "x":
                         //Si el nombre es valido se valida el mail y se guarda en el usuario
-                        u.setUsuario(nombre_aux);
+                        u.setUserName(nombre_aux);
 
                         //se valida el mail y si es valido se guarda en el usuario
                         switch (Validaciones.validarMail(mail_aux)) {
@@ -129,10 +130,11 @@ public class RegistroFragment extends Fragment {
                         }
 
 
-                        NavController navController = Navigation.findNavController(view);
-                        navController.navigate(R.id.action_nav_registro_to_nav_iniciosesion);
-
                 }
+
+                NavController navController = Navigation.findNavController(view);
+                navController.navigate(R.id.action_nav_registro_to_nav_iniciosesion);
+
             }
         });
 
