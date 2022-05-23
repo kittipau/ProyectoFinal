@@ -1,25 +1,28 @@
 package com.example.appBiaf.entidades;
 
-public class Diseño {
+import android.media.Image;
+
+public class Diseno {
 
     private int diseñoID;
     private String nombre;
     private String descripcion;
+    private Image Imagen;
 
-    public Diseño() {
+    public Diseno() {
     }
 
-    public Diseño(int diseñoID, String nombre, String descripcion) {
+    public Diseno(int diseñoID, String nombre, String descripcion) {
         this.diseñoID = diseñoID;
         this.nombre = nombre;
         this.descripcion = descripcion;
     }
 
-    public int getDiseñoID() {
+    public int getDisenoID() {
         return diseñoID;
     }
 
-    public void setDiseñoID(int diseñoID) {
+    public void setDisenoID(int diseñoID) {
         this.diseñoID = diseñoID;
     }
 

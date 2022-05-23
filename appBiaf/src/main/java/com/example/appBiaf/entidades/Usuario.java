@@ -8,7 +8,7 @@ public class Usuario {
     private String userName;
     private String email;
     private String contraseña;
-    private Diseño diseño;
+    private Diseno diseno;
 
 
     /**
@@ -28,13 +28,13 @@ public class Usuario {
      * @param usuario
      * @param email
      * @param contraseña
-     * @param diseño
+     * @param diseno
      */
-    public Usuario(String usuario, String email, String contraseña, Diseño diseño) {
+    public Usuario(String usuario, String email, String contraseña, Diseno diseno) {
         this.userName = usuario;
         this.email = email;
         this.contraseña = contraseña;
-        this.diseño = diseño;
+        this.diseno = diseno;
     }
 
     /**
@@ -128,15 +128,15 @@ public class Usuario {
      * getter del diseño que ha votado el usuario
      * @return diseño votado por el usuario
      */
-    public Diseño getDiseño() {
-        return diseño;
+    public Diseno getDiseño() {
+        return diseno;
     }
 
     /**
      * setter del diseño votado por el usuario
-     * @param diseño votado por el usuario
+     * @param diseno votado por el usuario
      */
-    public void setDiseño(Diseño diseño) {
-        this.diseño = diseño;
+    public void setDiseño(Diseno diseno) {
+        this.diseno = diseno;
     }
 }

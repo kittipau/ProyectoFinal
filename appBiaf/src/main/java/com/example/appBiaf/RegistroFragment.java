@@ -2,63 +2,149 @@ package com.example.appBiaf;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link RegistroFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+import com.example.appBiaf.databinding.FragmentInicioSesionBinding;
+import com.example.appBiaf.databinding.FragmentRegistroBinding;
+import com.example.appBiaf.entidades.Usuario;
+import com.google.android.material.snackbar.Snackbar;
+
+
 public class RegistroFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
+    private FragmentRegistroBinding binding;
+    EditText user, contra, contra2, email;
+    Button registrar;
+    Usuario u;
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
 
-    public RegistroFragment() {
-        // Required empty public constructor
+    public View onCreateView(@NonNull LayoutInflater inflater,
+                             ViewGroup container, Bundle savedInstanceState) {
+        binding = FragmentRegistroBinding.inflate(inflater, container, false);
+        View root = binding.getRoot();
+
+        user = root.findViewById(R.id.Regusuario2);
+        contra = root.findViewById(R.id.Regcontraseña2);
+        contra2 = root.findViewById(R.id.RegRepcontraseña2);
+        email = root.findViewById(R.id.userEmail2);
+
+
+        registrar = root.findViewById(R.id.buttonRegistrar);
+        registrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+//guardo el valor de los campos en variables auxiliares para hacer las validaciones
+                String nombre_aux = user.getText().toString();
+                String mail_aux = email.getText().toString();
+                String contra_aux = contra.getText().toString();
+
+                //se valida el nombre y si es valido se guarda en el usuario
+                switch (Validaciones.validarnombre(nombre_aux)) {
+                    case "a":
+                        //Si está vacío
+                        Snackbar.make(view, getResources().getString(R.string.nombre1), Snackbar.LENGTH_SHORT).show();
+                        // Toast.makeText(getApplicationContext(), getResources().getString(R.string.nombre1), Toast.LENGTH_SHORT).show();
+                        break;
+                    case "b":
+                        //Si tiene más de 20 caracteres
+                        Snackbar.make(view, getResources().getString(R.string.nombre2), Snackbar.LENGTH_SHORT).show();
+                        //Toast.makeText(getApplicationContext(), getResources().getString(R.string.nombre2), Toast.LENGTH_SHORT).show();
+                        break;
+                    case "c":
+                        //Si tiene caracteres especiales
+                        Snackbar.make(view, getResources().getString(R.string.nombre3), Snackbar.LENGTH_SHORT).show();
+                        //Toast.makeText(getApplicationContext(), getResources().getString(R.string.nombre3), Toast.LENGTH_SHORT).show();
+                        break;
+                    case "x":
+                        //Si el nombre es valido se valida el mail y se guarda en el usuario
+                        u.setUsuario(nombre_aux);
+
+                        //se valida el mail y si es valido se guarda en el usuario
+                        switch (Validaciones.validarMail(mail_aux)) {
+                            case "a":
+                                //Si está vacío
+                                Snackbar.make(view, getResources().getString(R.string.mail1), Snackbar.LENGTH_SHORT).show();
+                                //Toast.makeText(getApplicationContext(), getResources().getString(R.string.mail1), Toast.LENGTH_SHORT).show();
+                                break;
+                            case "b":
+                                //Si no tiene entre 5 y 40 caracteres
+                                Snackbar.make(view, getResources().getString(R.string.mail2), Snackbar.LENGTH_SHORT).show();
+                                //Toast.makeText(getApplicationContext(), getResources().getString(R.string.mail2), Toast.LENGTH_SHORT).show();
+                                break;
+                            case "c":
+                                //Si tiene caracteres especiales distintos a "@", "_", "."
+                                Snackbar.make(view, getResources().getString(R.string.mail3), Snackbar.LENGTH_SHORT).show();
+                                //Toast.makeText(getApplicationContext(), getResources().getString(R.string.mail3), Toast.LENGTH_SHORT).show();
+                                break;
+
+                            case "x":
+                                u.setEmail(mail_aux);
+                                switch (Validaciones.validarcontra(contra_aux)) {
+                                    case "a":
+                                        //Si está vacío
+                                        Snackbar.make(view, getResources().getString(R.string.contra1), Snackbar.LENGTH_SHORT).show();
+                                        //Toast.makeText(getApplicationContext(), getResources().getString(R.string.contra1), Toast.LENGTH_SHORT).show();
+                                        break;
+                                    case "b":
+                                        //Si tiene más de 20 caracteres
+                                        Snackbar.make(view, getResources().getString(R.string.contra2), Snackbar.LENGTH_SHORT).show();
+                                        //Toast.makeText(getApplicationContext(), getResources().getString(R.string.contra2), Toast.LENGTH_SHORT).show();
+                                        break;
+                                    case "c":
+                                        //Si tiene caracteres especiales (solo numeros y letras)
+                                        Snackbar.make(view, getResources().getString(R.string.contra3), Snackbar.LENGTH_SHORT).show();
+                                        //Toast.makeText(getApplicationContext(), getResources().getString(R.string.contra3), Toast.LENGTH_SHORT).show();
+                                        break;
+                                    case "x":
+                                        // Si la contraseña es valida se comparan las dos contraseñas
+                                        // Solo validamos la primera, porque como deben coincidir, se considera que si coinciden la segunda queda validada también
+
+                                        u.setContraseña(contra_aux);
+                                        if (contra_aux.equals(contra2.getText().toString())) {
+                                            u.setContraseña(contra.getText().toString());
+                                            //Si  hay un usuario con ese nombre se manda un toast indicandolo
+                                            Cliente cliente = new Cliente();
+                                            cliente.setOpcion("1");
+                                            cliente.setUsuario(u);
+                                            cliente.start();
+
+                                        } else {
+                                            //Si las contraseñas no coinciden, se indica por mensaje.
+                                            Snackbar.make(view, getResources().getString(R.string.toast3), Snackbar.LENGTH_SHORT).show();
+
+                                            //Toast.makeText(getApplicationContext(), getResources().getString(R.string.toast3), Toast.LENGTH_SHORT).show();
+                                        }
+                                }
+
+                        }
+
+
+                        NavController navController = Navigation.findNavController(view);
+                        navController.navigate(R.id.action_nav_registro_to_nav_iniciosesion);
+
+                }
+            }
+        });
+
+        return root;
+
+
+
+
     }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment RegistroFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static RegistroFragment newInstance(String param1, String param2) {
-        RegistroFragment fragment = new RegistroFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_registro, container, false);
+    public void onDestroyView() {
+        super.onDestroyView();
+        binding = null;
     }
 }
