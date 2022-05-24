@@ -4,22 +4,18 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 
 import com.example.appBiaf.Cliente;
 import com.example.appBiaf.R;
 import com.example.appBiaf.Validaciones;
-import com.example.appBiaf.databinding.FragmentInicioSesionBinding;
 import com.example.appBiaf.databinding.FragmentRegistroBinding;
-import com.example.appBiaf.entidades.Usuario;
+import cadexpo.Usuario;
 import com.google.android.material.snackbar.Snackbar;
 
 
@@ -71,7 +67,7 @@ public class RegistroFragment extends Fragment {
                         break;
                     case "x":
                         //Si el nombre es valido se valida el mail y se guarda en el usuario
-                        u.setUserName(nombre_aux);
+                        u.setUser(nombre_aux);
 
                         //se valida el mail y si es valido se guarda en el usuario
                         switch (Validaciones.validarMail(mail_aux)) {
@@ -92,7 +88,8 @@ public class RegistroFragment extends Fragment {
                                 break;
 
                             case "x":
-                                u.setEmail(mail_aux);
+                                u.setMail(mail_aux);
+
                                 switch (Validaciones.validarcontra(contra_aux)) {
                                     case "a":
                                         //Si está vacío
@@ -113,9 +110,9 @@ public class RegistroFragment extends Fragment {
                                         // Si la contraseña es valida se comparan las dos contraseñas
                                         // Solo validamos la primera, porque como deben coincidir, se considera que si coinciden la segunda queda validada también
 
-                                        u.setContraseña(contra_aux);
+                                        u.setContra(contra_aux);
                                         if (contra_aux.equals(contra2.getText().toString())) {
-                                            u.setContraseña(contra.getText().toString());
+                                            u.setContra(contra.getText().toString());
                                             //Si  hay un usuario con ese nombre se manda un toast indicandolo
                                             Cliente cliente = new Cliente();
                                             cliente.setOpcion("1");
@@ -135,8 +132,8 @@ public class RegistroFragment extends Fragment {
 
                 }
 
-                NavController navController = Navigation.findNavController(view);
-                navController.navigate(R.id.action_nav_registro_to_nav_iniciosesion);
+             //   NavController navController = Navigation.findNavController(view);
+               // navController.navigate(R.id.action_nav_registro_to_nav_iniciosesion);
 
             }
         });

@@ -1,10 +1,9 @@
 package com.example.appBiaf;
 
-import com.example.appBiaf.entidades.Usuario;
+import cadexpo.Usuario;
 
 import java.io.DataOutputStream;
 import java.io.IOException;
-import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.OutputStream;
 import java.net.Socket;
@@ -36,7 +35,7 @@ public class Cliente extends Thread {
     @Override
     public void run() {
         try {
-            String equipoServidor = "127.0.0.1";
+            String equipoServidor = "192.168.0.26";
             int puertoServidor = 30500;
             /** Se abre un socket en el cliente, y dicho socket establece
              "una conexión con el socket del servidor si tuado en el puerto 30500 de la 127.0.0.1" */
