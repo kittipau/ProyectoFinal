@@ -1,4 +1,4 @@
-package com.example.appBiaf;
+package com.example.appBiaf.Fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

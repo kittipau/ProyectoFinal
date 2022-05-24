@@ -57,12 +57,13 @@
     <string name="loginregistrar">Registrar</string>
 
     <!--Títulos -->
-    <string name="menu_diseñadores">DISEÑADORES</string>
+    <string name="menu_diseñadores">DISEÑADOR</string>
     <string name="menu_contacto">CONTACTO</string>
     <string name="menu_concurso">CONCURSO</string>
     <string name="menu_registro">REGISTRO</string>
     <string name="menu_iniciosesion">INICIA SESIÓN</string>
     <string name="menu_admin">GESTION ADMINISTRADOR</string>
+    <string name="menu_diseño">DISEÑO</string>
     <string name="menu_algo">sd dfs</string>
 
 
@@ -74,14 +75,6 @@
     <string name="registroRegistrar">Registrar</string>
     <string name="registroRestablecer">Restablecer</string>
 
-
-    <!--Botones de la gestión admins-->
-    <string name="gesDiseñadores">GESTIONAR DISEÑADORES</string>
-    <string name="gesDiseños">GESTIONAR DISEÑos</string>
-    <string name="gesConfig">GESTIONAR CONFIGURACION</string>
-    <string name="gesUsuarios">Gestionar Usuarios</string>
-    <string name="gesiD">ID</string>
-    <string name="descripcion">Descripción </string>
 
     <!--GestionDiseñadores -->
     <string name="alias">Alias</string>
@@ -139,7 +132,6 @@
     <string name="contra3">La contraseña solo puede contenter números y letras </string>
 
     <string name="usuariorepe">Ya existe un usuario con ese nombre</string>
-
 
 
 </resources>

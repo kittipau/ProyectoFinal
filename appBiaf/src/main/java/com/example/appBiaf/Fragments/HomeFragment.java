@@ -1,4 +1,4 @@
-package com.example.appBiaf;
+package com.example.appBiaf.Fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,6 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 
+import com.example.appBiaf.R;
 import com.example.appBiaf.databinding.FragmentHomeBinding;
 
 public class HomeFragment extends Fragment {

@@ -1,4 +1,4 @@
-package com.example.appBiaf;
+package com.example.appBiaf.Fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,6 +16,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.appBiaf.R;
 import com.example.appBiaf.databinding.FragmentHomeBinding;
 import com.example.appBiaf.databinding.FragmentInicioSesionBinding;
 

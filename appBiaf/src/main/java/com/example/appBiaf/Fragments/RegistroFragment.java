@@ -1,4 +1,4 @@
-package com.example.appBiaf;
+package com.example.appBiaf.Fragments;
 
 import android.os.Bundle;
 
@@ -14,6 +14,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.example.appBiaf.Cliente;
+import com.example.appBiaf.R;
+import com.example.appBiaf.Validaciones;
 import com.example.appBiaf.databinding.FragmentInicioSesionBinding;
 import com.example.appBiaf.databinding.FragmentRegistroBinding;
 import com.example.appBiaf.entidades.Usuario;

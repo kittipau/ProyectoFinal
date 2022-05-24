@@ -8,32 +8,32 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.example.appBiaf.HomeFragment"
+        android:name="com.example.appBiaf.Fragments.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_disenadores"
-        android:name="com.example.appBiaf.DisenadoresFragment"
+        android:name="com.example.appBiaf.Fragments.DisenadoresFragment"
         android:label="@string/menu_disenadores"
         tools:layout="@layout/fragment_disenadores" />
 
     <fragment
         android:id="@+id/nav_disenos"
-        android:name="com.example.appBiaf.SobreNosotrosFragment"
+        android:name="com.example.appBiaf.Fragments.SobreNosotrosFragment"
         android:label="@string/menu_diseno"
         tools:layout="@layout/fragment_sobre_nosotros" />
 
 
     <fragment
         android:id="@+id/nav_concurso"
-        android:name="com.example.appBiaf.ConcursoFragment"
+        android:name="com.example.appBiaf.Fragments.ConcursoFragment"
         android:label="@string/menu_concurso_nav"
         tools:layout="@layout/fragment_concurso" />
 
     <fragment
         android:id="@+id/nav_iniciosesion"
-        android:name="com.example.appBiaf.InicioSesionFragment"
+        android:name="com.example.appBiaf.Fragments.InicioSesionFragment"
         android:label="@string/menu_iniciosesion"
         tools:layout="@layout/fragment_inicio_sesion" >
         <action
@@ -46,12 +46,12 @@
 
     <fragment
         android:id="@+id/nav_SobreNosotros"
-        android:name="com.example.appBiaf.SobreNosotrosFragment"
+        android:name="com.example.appBiaf.Fragments.SobreNosotrosFragment"
         tools:layout="@layout/fragment_sobre_nosotros" />
 
     <fragment
         android:id="@+id/nav_registro"
-        android:name="com.example.appBiaf.RegistroFragment"
+        android:name="com.example.appBiaf.Fragments.RegistroFragment"
         tools:layout="@layout/fragment_registro" >
         <action
             android:id="@+id/action_nav_registro_to_nav_iniciosesion"
@@ -60,7 +60,7 @@
 
     <fragment
         android:id="@+id/nav_perfil"
-        android:name="com.example.appBiaf.PerfilFragment"
+        android:name="com.example.appBiaf.Fragments.PerfilFragment"
         tools:layout="@layout/fragment_perfil" />
 
 </navigation>

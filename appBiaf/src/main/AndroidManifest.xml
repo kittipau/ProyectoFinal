@@ -4,6 +4,9 @@
     package="com.example.appBiaf">
     <!-- para el lector QR-->
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
     <uses-sdk tools:overrideLibrary="com.google.zxing.client.android" />
     <application
         android:allowBackup="true"
@@ -15,13 +18,7 @@
 
         android:hardwareAccelerated="true"
         android:theme="@style/Theme.IESAtaulfoArgenta">
-        <activity
-            android:name=".gestion.GestionDisenadores"
-            android:exported="false" />
-        <activity
-            android:name=".gestion.GestionConfig"
-            android:exported="false" /> <!-- Poner cada adictividad -->
-        <meta-data
+
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 

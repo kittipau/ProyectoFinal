@@ -39,22 +39,20 @@ public class Cliente extends Thread {
             String equipoServidor = "127.0.0.1";
             int puertoServidor = 30500;
             /** Se abre un socket en el cliente, y dicho socket establece
-             "una conexión con el socket del servidor situado en el puerto 30500 de la 127.0.0.1" */
+             "una conexión con el socket del servidor si tuado en el puerto 30500 de la 127.0.0.1" */
             Socket socketCliente = new Socket(equipoServidor, puertoServidor);
 
+            //Preparo el envio de datos
+            OutputStream os = socketCliente.getOutputStream();
+            DataOutputStream dos = new DataOutputStream(os);
+
             if (opcion.equals("1") || opcion.equals("2")){
-                //Mando la opción para que el servidor sepa que método invocar
-                OutputStream os = socketCliente.getOutputStream();
-                DataOutputStream dos = new DataOutputStream(os);
-                //mando la opcion que el servidor leerá
                 dos.writeUTF(opcion);
-                //
+
                 InsertarYModificar(socketCliente,usuario);
 
             } else if (opcion.equals("3")){
                 //Mando la opción para que el servidor sepa que método invocar
-                OutputStream os = socketCliente.getOutputStream();
-                DataOutputStream dos = new DataOutputStream(os);
 
             }
 
