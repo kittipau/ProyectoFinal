@@ -3,6 +3,8 @@ package com.example.appBiaf;
 import com.google.android.material.snackbar.Snackbar;
 
 
+import pojos.Configuracion;
+import pojos.Participante;
 import pojos.Usuario;
 
 import java.io.DataOutputStream;
@@ -16,8 +18,26 @@ public class Cliente extends Thread {
 
     String opcion=""; // 1 insertar usurio
     Usuario usuario;
+    Participante participante;
+    Configuracion configuracion;
 
     public Cliente() {
+    }
+
+    public Participante getParticipante() {
+        return participante;
+    }
+
+    public void setParticipante(Participante participante) {
+        this.participante = participante;
+    }
+
+    public Configuracion getConfiguracion() {
+        return configuracion;
+    }
+
+    public void setConfiguracion(Configuracion configuracion) {
+        this.configuracion = configuracion;
     }
 
     public String getOpcion() {
@@ -56,8 +76,7 @@ public class Cliente extends Thread {
             } else if (opcion.equals("3")){
                 //iniciar sesión
                 dos.writeUTF(opcion);
-                IniciarSesion(socketCliente,usuario);
-
+                mostrarDisenador(socketCliente, participante.getNombreDisenador());
             }
 
             //Se cierra el cliente
@@ -95,17 +114,32 @@ public class Cliente extends Thread {
             ObjectInputStream ois = new ObjectInputStream(socketCliente.getInputStream());
             u = (Usuario) ois.readObject();
 
-            if (u == null) {
-                //que salga un snackbar
-
-            }
-
             //Se cierra la comunicación
             oos.close();
         } catch (IOException | ClassNotFoundException ex) {
             System.out.println(ex.getMessage());
         }
         return u;
+    }
+
+    public Participante mostrarDisenador (Socket socketCliente, String nombre) {
+        Participante p = new Participante();
+
+        try {
+            //El cliente contruye el objetco y lo envia al servidor
+            DataOutputStream dos = new DataOutputStream(socketCliente.getOutputStream());
+            dos.writeUTF(nombre);
+
+            //Espero el objeto completo
+            ObjectInputStream ois = new ObjectInputStream(socketCliente.getInputStream());
+            p = (Participante) ois.readObject();
+
+            //Se cierra la comunicación
+            ois.close();
+        } catch (IOException | ClassNotFoundException ex) {
+            System.out.println(ex.getMessage());
+        }
+        return p;
     }
 
     }

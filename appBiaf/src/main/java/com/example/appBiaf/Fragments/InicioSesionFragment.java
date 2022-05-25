@@ -62,14 +62,13 @@ public class InicioSesionFragment extends Fragment {
                     cliente.setUsuario(usuario);
                     cliente.start();
 
-                    Bundle bundle = new Bundle();
-                    bundle.putString("nombre", usuario.getUser());
-                    NavController navController = Navigation.findNavController(view);
-                    navController.navigate(R.id.action_nav_iniciosesion_to_nav_registro);
-                    Navigation.findNavController(view).navigate(R.id.action_nav_iniciosesion_to_nav_perfil, bundle);
-                    if (usuario.getMail() == null) {
-                        Snackbar.make(view, getResources().getString(R.string.nousuario), Snackbar.LENGTH_SHORT).show();
+                    if(usuario==null){
+                        Snackbar.make(view,getResources().getString(R.string.nousuario), Snackbar.LENGTH_SHORT).show();
 
+                    } else {
+                       Bundle bundle = new Bundle();
+                       bundle.putString("nombre", usuario.getUser());
+                       Navigation.findNavController(view).navigate(R.id.action_nav_iniciosesion_to_nav_perfil, bundle);
                     }
                 }
 
