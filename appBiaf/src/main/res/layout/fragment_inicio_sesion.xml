@@ -91,7 +91,7 @@
 
                 <!-- Textfield usuario con fondo semintransparente-->
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/userEmail2"
+                    android:id="@+id/user2"
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
                     android:background="#90FFFFFF"

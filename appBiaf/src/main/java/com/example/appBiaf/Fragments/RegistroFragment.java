@@ -15,7 +15,7 @@ import com.example.appBiaf.Cliente;
 import com.example.appBiaf.R;
 import com.example.appBiaf.Validaciones;
 import com.example.appBiaf.databinding.FragmentRegistroBinding;
-import cadexpo.Usuario;
+import pojos.Usuario;
 import com.google.android.material.snackbar.Snackbar;
 
 

@@ -1,9 +1,13 @@
 package com.example.appBiaf;
 
-import cadexpo.Usuario;
+import com.google.android.material.snackbar.Snackbar;
+
+
+import pojos.Usuario;
 
 import java.io.DataOutputStream;
 import java.io.IOException;
+import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.OutputStream;
 import java.net.Socket;
@@ -47,11 +51,12 @@ public class Cliente extends Thread {
 
             if (opcion.equals("1") || opcion.equals("2")){
                 dos.writeUTF(opcion);
-
-                InsertarYModificar(socketCliente,usuario);
+                InsertaryEliminar(socketCliente,usuario);
 
             } else if (opcion.equals("3")){
-                //Mando la opción para que el servidor sepa que método invocar
+                //iniciar sesión
+                dos.writeUTF(opcion);
+                IniciarSesion(socketCliente,usuario);
 
             }
 
@@ -67,7 +72,7 @@ public class Cliente extends Thread {
      * @param socketCliente
      * @param usuario
      */
-    public void InsertarYModificar (Socket socketCliente, Usuario usuario) {
+    public void InsertaryEliminar (Socket socketCliente, Usuario usuario) {
         try {
             //El cliente contruye el objetco y lo envia al servidor
             ObjectOutputStream oos = new ObjectOutputStream(socketCliente.getOutputStream());
@@ -77,6 +82,30 @@ public class Cliente extends Thread {
         } catch (IOException ex) {
             System.out.println(ex.getMessage());
         }
+    }
+
+    public Usuario IniciarSesion (Socket socketCliente, Usuario usuario) {
+        Usuario u = new Usuario();
+        try {
+            //El cliente contruye el objetco y lo envia al servidor
+            ObjectOutputStream oos = new ObjectOutputStream(socketCliente.getOutputStream());
+            oos.writeObject(usuario);
+
+            //Espero el objeto completo
+            ObjectInputStream ois = new ObjectInputStream(socketCliente.getInputStream());
+            u = (Usuario) ois.readObject();
+
+            if (u == null) {
+                //que salga un snackbar
+
+            }
+
+            //Se cierra la comunicación
+            oos.close();
+        } catch (IOException | ClassNotFoundException ex) {
+            System.out.println(ex.getMessage());
+        }
+        return u;
     }
 
     }

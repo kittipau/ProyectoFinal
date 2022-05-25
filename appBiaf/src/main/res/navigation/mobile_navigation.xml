@@ -61,6 +61,10 @@
     <fragment
         android:id="@+id/nav_perfil"
         android:name="com.example.appBiaf.Fragments.PerfilFragment"
-        tools:layout="@layout/fragment_perfil" />
+        tools:layout="@layout/fragment_perfil" >
+        <argument
+            android:name="nombre"
+            app:argType="string" />
+    </fragment>
 
 </navigation>
