@@ -60,26 +60,31 @@ public class Cliente extends Thread {
     public void run() {
         try {
             String equipoServidor = "192.168.0.26";
+            String equiposervidor2 = "10.190.34.80";
             int puertoServidor = 30500;
             /** Se abre un socket en el cliente, y dicho socket establece
              "una conexión con el socket del servidor si tuado en el puerto 30500 de la 127.0.0.1" */
-            Socket socketCliente = new Socket(equipoServidor, puertoServidor);
+            Socket socketCliente = new Socket(equiposervidor2, puertoServidor);
 
             //Preparo el envio de datos
             OutputStream os = socketCliente.getOutputStream();
             DataOutputStream dos = new DataOutputStream(os);
 
+
             if (opcion.equals("1") || opcion.equals("2")){
                 dos.writeUTF(opcion);
+                dos.close();
                 InsertaryEliminar(socketCliente,usuario);
 
             } else if (opcion.equals("3")){
                 //iniciar sesión
                 dos.writeUTF(opcion);
-                mostrarDisenador(socketCliente, participante.getNombreDisenador());
+                dos.close();
+                mostrarDisenador(socketCliente, participante);
             }
 
             //Se cierra el cliente
+
             socketCliente.close();
         } catch (IOException e) {
             System.out.println(e.getMessage());
@@ -110,6 +115,7 @@ public class Cliente extends Thread {
             ObjectOutputStream oos = new ObjectOutputStream(socketCliente.getOutputStream());
             oos.writeObject(usuario);
 
+
             //Espero el objeto completo
             ObjectInputStream ois = new ObjectInputStream(socketCliente.getInputStream());
             u = (Usuario) ois.readObject();
@@ -122,7 +128,28 @@ public class Cliente extends Thread {
         return u;
     }
 
-    public Participante mostrarDisenador (Socket socketCliente, String nombre) {
+    public Participante mostrarDisenador (Socket socketCliente, Participante participante) {
+        Participante p = new Participante();
+
+        try {
+            //El cliente contruye el objetco y lo envia al servidor
+            ObjectOutputStream oos = new ObjectOutputStream(socketCliente.getOutputStream());
+            DataOutputStream dos = new DataOutputStream(socketCliente.getOutputStream());
+            oos.writeObject(participante);
+
+            //Espero el objeto completo
+            ObjectInputStream ois = new ObjectInputStream(socketCliente.getInputStream());
+            p = (Participante) ois.readObject();
+
+            //Se cierra la comunicación
+            ois.close();
+        } catch (IOException | ClassNotFoundException ex) {
+            System.out.println(ex.getMessage());
+        }
+        return p;
+    }
+
+    public Participante listarDisenadores (Socket socketCliente, String nombre) {
         Participante p = new Participante();
 
         try {
