@@ -38,6 +38,7 @@
         app:layout_constraintEnd_toEndOf="parent"
      >
 
+        
     <ImageView
         android:id="@+id/imageDisenador"
         android:layout_width="291dp"
@@ -64,7 +65,8 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageDisenador"
-        app:layout_constraintVertical_bias="0.027" />
+        app:layout_constraintVertical_bias="0.027"
+        android:textColor="@color/black"/>
 
     <TextView
         android:id="@+id/textDescDisenador"
@@ -78,7 +80,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textDisenador"
         app:layout_constraintVertical_bias="0.392"
-        android:background="@drawable/bordegris_cuadrado"/>
+        android:background="@drawable/bordegris_cuadrado"
+        android:textColor="@color/black"/>
 
         <View
             android:id="@+id/view"

@@ -27,6 +27,8 @@ public class DisenadorFragment extends Fragment {
     String user;
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
+
+
         binding = FragmentDisenadorBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
@@ -40,6 +42,8 @@ public class DisenadorFragment extends Fragment {
         cliente.setOpcion("3");
         cliente.setParticipante(p);
         cliente.start();
+        nombre.setText(cliente.getParticipante().getNombreDisenador());
+        descripcion.setText(cliente.getParticipante().getDesripcionDisenador());
 
 
 

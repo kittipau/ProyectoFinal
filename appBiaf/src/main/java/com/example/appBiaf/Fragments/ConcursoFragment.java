@@ -15,7 +15,7 @@ public class ConcursoFragment extends Fragment {
 
     private FragmentConcursoBinding binding;
 
-    public View onCreateView(@NonNull LayoutInflater inflater,
+        public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         binding = FragmentConcursoBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
